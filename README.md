@@ -13,7 +13,7 @@ This lab explores the **practical performance differences** between adjacency ma
 4. **Experience** where each representation succeeds and fails
 5. **Understand** why representation choice matters in real systems
 
-If you are curious about the use of OO, classes, polymorphism, and overloading of methods in the Pythonic example, and its corrallaries in C, you can read up on that in [This File](./polymorphism-overloading.md). 
+If you are curious about the use of OO, classes, polymorphism, and overloading of methods in the pythonic example, and its corrallaries in C, you can read up on that in [This File](./polymorphism-overloading.md). 
 
 ## Learning Objectives
 
@@ -30,17 +30,17 @@ By completing this lab, you will:
 ```bash
 # 1. Generate test networks
 cd scripts
-python generate_network.py --size tiny    # 100 nodes - baseline
-python generate_network.py --size small   # 1,000 nodes
-python generate_network.py --size medium  # 10,000 nodes - matrix starts struggling
-python generate_network.py --size large   # 50,000 nodes - matrix ~10GB RAM!
+python3 generate_network.py --size tiny    # 100 nodes - baseline
+python3 generate_network.py --size small   # 1,000 nodes
+python3 generate_network.py --size medium  # 10,000 nodes - matrix starts struggling
+python3 generate_network.py --size large   # 50,000 nodes - matrix ~10GB RAM!
 
 # 2. Run experiments
 cd ../python
-python run_experiments.py
+python3 run_experiments.py
 
 # 3. Or run individual benchmarks
-python graph_representations.py ../data/medium_nodes.csv ../data/medium_edges.csv --benchmark
+python graph_representations.py data/medium_nodes.csv data/medium_edges.csv --benchmark
 ```
 
 ## Network Sizes and Expected Behavior
@@ -181,8 +181,8 @@ Dijkstra's algorithm is in the `c` folder, and instructions for running it are [
 
 Try loading the "huge" network with matrix representation:
 ```bash
-python generate_network.py --size huge
-python -c "from graph_representations import load_graph; load_graph('../data/huge_nodes.csv', '../data/huge_edges.csv', use_matrix=True)"
+python3 scripts/generate_network.py --size huge
+python3 -c "from python/graph_representations import load_graph; load_graph('data/huge_nodes.csv', 'data/huge_edges.csv', use_matrix=True)"
 ```
 
 Watch your system monitor. Document:
