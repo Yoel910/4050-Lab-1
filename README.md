@@ -40,7 +40,7 @@ cd ../python
 python3 run_experiments.py
 
 # 3. Or run individual benchmarks
-python graph_representations.py ../data/medium_nodes.csv ../data/medium_edges.csv --benchmark
+python graph_representations.py data/medium_nodes.csv data/medium_edges.csv --benchmark
 ```
 
 ## Network Sizes and Expected Behavior
@@ -182,7 +182,7 @@ Dijkstra's algorithm is in the `c` folder, and instructions for running it are [
 Try loading the "huge" network with matrix representation:
 ```bash
 python3 scripts/generate_network.py --size huge
-python3 -c "from graph_representations import load_graph; load_graph('../data/huge_nodes.csv', '../data/huge_edges.csv', use_matrix=True)"
+python3 -c "from python/graph_representations import load_graph; load_graph('data/huge_nodes.csv', 'data/huge_edges.csv', use_matrix=True)"
 ```
 
 Watch your system monitor. Document:
