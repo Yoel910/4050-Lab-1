@@ -1,5 +1,5 @@
 # CS4050 Lab 1: Graph Representations at Scale
-
+Place all of your submission documents in the [./lab1_submission_folder](./lab1_submission/). You will submit a zip file of that directory in Canvas. 
 ## Overview
 
 This lab explores the **practical performance differences** between adjacency matrix and adjacency list graph representations. Rather than just learning the theoretical complexities, you will:
@@ -11,8 +11,6 @@ This lab explores the **practical performance differences** between adjacency ma
 5. **Understand** why representation choice matters in real systems
 
 If you are curious about the use of OO, classes, polymorphism, and overloading of methods in the Pythonic example, and its corrallaries in C, you can read up on that in [This File](./polymorphism-overloading.md). 
-
-
 
 ## Learning Objectives
 
@@ -167,6 +165,8 @@ Run Dijkstra's algorithm on both representations:
 | small | | | |
 | medium | | | |
 
+Dijkstra's algorithm is in the `c` folder, and instructions for running it are [in the README.md file in that directory.](./c/README.md)
+
 **Questions:**
 1. Why is matrix-based Dijkstra slower despite O(1) edge lookup?
 2. Where in the algorithm does the slowdown occur?
@@ -211,6 +211,8 @@ class HybridGraph(Graph):
 ```
 
 ## Submission Requirements
+
+Place all of your submission documents in the [./lab1_submission_folder](./lab1_submission/). You will submit a zip file of that directory in Canvas. 
 
 1. **Experimental data** from all exercises (CSV or screenshots)
 2. **Written answers** to all questions (~1-2 paragraphs each)
