@@ -30,10 +30,10 @@ By completing this lab, you will:
 ```bash
 # 1. Generate test networks
 cd scripts
-python3 generate_network.py --size tiny    # 100 nodes - baseline
-python3 generate_network.py --size small   # 1,000 nodes
-python3 generate_network.py --size medium  # 10,000 nodes - matrix starts struggling
-python3 generate_network.py --size large   # 50,000 nodes - matrix ~10GB RAM!
+python3 scripts/generate_network.py --size tiny    # 100 nodes - baseline
+python3 scripts/generate_network.py --size small   # 1,000 nodes
+python3 scripts/generate_network.py --size medium  # 10,000 nodes - matrix starts struggling
+python3 scripts/generate_network.py --size large   # 50,000 nodes - matrix ~10GB RAM!
 
 # 2. Run experiments
 cd ../python
