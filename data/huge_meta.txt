@@ -1,9 +1,0 @@
-Network: huge
-Nodes: 99856
-Edges: 299568
-Average degree: 6.00
-
-Memory estimates:
-  Adjacency Matrix: 74.29 GB
-  Adjacency List: 15.24 MB
-  Ratio (Matrix/List): 4992.8x
