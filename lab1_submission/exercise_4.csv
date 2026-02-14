@@ -1,0 +1,4 @@
+Stage,Estimated_Memory_Usage
+Before_loading,2-3GB
+During_matrix_allocation,30-32GB
+After_exhaustion,Process_killed_or_system_freeze

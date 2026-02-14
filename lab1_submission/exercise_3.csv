@@ -1,0 +1,4 @@
+Network,List_Dijkstra_ms,Matrix_Dijkstra_ms,Slowdown
+tiny,2,5,2.5x
+small,25,90,3.6x
+medium,180,950,5.3x

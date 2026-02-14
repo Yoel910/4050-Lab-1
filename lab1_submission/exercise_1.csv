@@ -1,0 +1,5 @@
+Network,Nodes,List_Memory_GB,Matrix_Memory_GB,Ratio_Matrix_to_List
+tiny,1000,0.01,0.008,0.8
+small,10000,0.08,0.8,10.0
+medium,50000,0.4,20.0,50.0
+large,100000,0.8,80.0,100.0

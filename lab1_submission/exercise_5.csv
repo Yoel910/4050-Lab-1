@@ -1,0 +1,5 @@
+Scenario,Nodes_or_Size,Avg_Degree_or_Density,Recommended_Representation,Justification
+Google Maps routing,~50 million,4,Adjacency List,Sparse graph; matrix infeasible
+Social network analysis,~1 billion,200,Adjacency List,Sparse relative to V^2; memory efficient
+Circuit analysis,"10,000 components",3,Adjacency List,"Sparse, traversal efficient"
+Dense communication matrix,500 servers,all-to-all,Adjacency Matrix,Dense graph; O(1) edge lookup
